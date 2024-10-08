@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kazundo's Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Page avec fond d'écran responsive</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .bg {
+            background-image: url("https://zupimages.net/up/23/22/3ccz.png");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Kazundo's Website</h1>
-    </header>
-    <main>
-        <p>This is the main content of the website.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Kazundo. All rights reserved.</p>
-    </footer>
+    <div class="bg">
+        <div class="content">
+            <h1>Bienvenue sur ma page</h1>
+        </div>
+    </div>
 </body>
-</html></html>
+</html>
